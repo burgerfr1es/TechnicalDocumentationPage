@@ -1,0 +1,551 @@
+<nav id="navbar">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <header>Axie Beginner's Guide</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#What_you_should_already_know"
+        >What you should already know</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#JavaScript_and_Java">Energy</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world">How to Gain Energy for Adventure Mode in Axie Infinity</a></li>
+    <li><a class="nav-link" href="#Variables">How to farm EXP and Level Up Axies in Adventure Mode</a></li>
+    <li>
+      <a class="nav-link" href="#Declaring_variables">Should I level up my Axies first in Adventure Mode when starting out?</a>
+    </li>
+    <li><a class="nav-link" href="#Variable_scope">EXP gained per Adventure Level/Ruin</a></li>
+    <li><a class="nav-link" href="#Global_variables">Overview of Axie Infinity Gameplay</a></li>
+    <li><a class="nav-link" href="#Constants">What are Axie base classes?</a></li>
+    <li><a class="nav-link" href="#Data_types">What are Axie Stats?</a></li>
+    <li>
+      <a class="nav-link" href="#if...else_statement">What are Axie Body Parts?</a>
+    </li>
+    <li><a class="nav-link" href="#while_statement">What are Axie Abilities/Cards?</a></li>
+    <li>
+      <a class="nav-link" href="#Function_declarations"
+        >How to Start Playing Axie Infinity</a
+      >
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        Axie Infinity is a play-to-earn NFT game where players level up and battle a team of virtual pets called Axies.
+
+Adventure mode is a PVE game mode where players battle against monsters to gain EXP and level up.
+      </p>
+
+      <p>
+        Leveling up your Axies is a must if you want to win more Adventure battles and earn more Smooth Love Potions (SLP). Furthermore:
+      </p>
+      <ul>
+        <li>
+          The higher your Axie’s levels, the more SLP you can potentially earn per day in Adventure PVE mode.
+        </li>
+        <li>
+          In this guide, we will teach how to level up your Axies in Adventure Mode as well as some EXP farming tips.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know</header>
+    <article>
+      <p>This guide assumes you have the following basic background:</p>
+
+      <ul>
+        <li>
+          Axie is a play-to-earn cryptocurrency game.
+        </li>
+        <li>Axie's not the only play-to-earn game on the market.
+</li>
+        <li>
+          Axie Infinity generated more revenue in the past 30 days than the other top ten apps combined.
+        </li>
+        <li>Axie land sale broke records.
+        </li>
+        <li>You need three Axies to take part in the game.
+        </li>
+        <li>People are quitting their jobs to play Axie.
+        </li>
+        <li>The price jumped over 600% in a month -- then halved in value.
+        </li>
+        <li>You can't buy Axie on major U.S. exchanges.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="JavaScript_and_Java">
+    <header>Energy</header>
+    <article>
+      <p>
+        Before we talk about how to level up your Axies fast, we need to understand how Energy works in Axie Infinity.
+      </p>
+
+      <p>
+        In Axie Infinity, both Adventure and Arena battles will consume 1 Energy.
+      </p>
+      <p>
+        You can see the amount of Energy you currently have on the main menu. You can also check here the remaining time left before you regain more Energy points.
+      </p>
+      <p>Energy is required if you want to:
+      </p>
+      <ul>
+        <li>earn Axie EXP in Adventure mode (PVE)
+        </li>
+        <li>earn SLP rewards in the Arena mode (PVP)
+        </li>
+      </ul>
+      <p>This means that the more Energy you have, the more EXP you can gain by going on Adventure (PVE) battles to level up your Axies.
+        </p>
+    </article>
+  </section>
+  <section class="main-section" id="Hello_world">
+    <header>How to Gain Energy for Adventure Mode in Axie Infinity</header>
+    <article>
+      <p>In Axie Infinity, players start with a maximum pool of 20/20 Energy.
+      </p>
+      <p>You will regain 5 Energy every 6 hours.
+      </p>
+      <p>
+      However, your maximum Energy pool and Energy refill rate can be increased if you own more Axies:
+      </p>
+      <table>
+  <tr>
+    <th>&nbsp# of Axies You Own&nbsp</th>
+    <th>&nbspEnergy per Day&nbsp</th>
+    <th>&nbspRefill Time&nbsp</th>
+  </tr>
+  <tr>
+    <td>3 – 9 Axies</td>
+    <td>20 Energy</td>
+    <td>5 Energy every 6 hours</td>
+  </tr>
+         <tr>
+    <td>10 – 19 Axies</td>
+    <td>40 Energy</td>
+    <td>5 Energy every 3 hours</td>
+  </tr>
+        <tr>
+    <td>20+ Axies</td>
+    <td>60 Energy</td>
+    <td>5 Energy every 2 hours</td>
+  </tr>
+</table>
+    </article>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>How to farm EXP and Level Up Axies in Adventure Mode</header>
+    <p>
+      To gain EXP and level up your Axies, you need to do Adventure mode battles while you have Energy.
+    </p>
+    <p>
+      This means that if you want to focus on leveling up your Axies, you should only spend your precious Energy on Adventure (PVE) and NOT on the Arena (PVP).
+    </p>
+    <img src="https://leveldash.com/wp-content/uploads/Earn-Smooth-Love-Potion-SLP-in-Axie-Infinity-by-doing-Adventure-mode-grinding-2048x1280.jpg" alt="AxieInfinity" height="600" width="950">
+    <p>
+      Arena PVP battles are only great for SLP farming and if your Axies are already leveled up.
+    </p>
+    <p>Another thing to keep in mind is if you lose an Adventure battle (PVE), you will not gain Experience points.
+    </p>
+    <p>This means that when farming EXP on PVE, you need to make sure that you can complete the level, otherwise you will just waste your Energy spent.
+    </p>
+    <p>You can check the amount of monsters that you will be facing by clicking on the level.
+    </p>
+    <p>Also, take note of levels that you can easily clear with your current team. Players call this the “comfort farming” EXP zones.
+    </p>
+  </section>
+  <section class="main-section" id="Declaring_variables">
+    <header>Should I level up my Axies first in Adventure Mode when starting out?</header>
+    <article>
+      Yes, you should focus on leveling up your Axies first if you are just starting out.
+      <p>
+        Most players recommend that you level up your Axies first on your first two weeks of playing.
+      </p>
+      <p>
+        When you’re just starting out, you will find that it is difficult to reach the daily 50 SLP from Adventure Mode.
+      </p>
+      <p>
+        This is because your Axie levels are still too low, and lower levels on Adventure Mode (PVE) only give a little amount of SLPs.
+      </p>
+      <p>Here are the SLP rewards you get from Adventure Mode for each level bracket:
+      </p>
+      <table>
+  <tr>
+    <th>&nbspAxie Level&nbsp</th>
+    <th>&nbspSLP Reward&nbsp</th>
+  </tr>
+  <tr>
+    <td>Level 1 – 4</td>
+    <td>&nbsp1 SLP per win&nbsp</td>
+  </tr>
+         <tr>
+    <td>Level 5 – 9</td>
+    <td>&nbsp2 SLP per win&nbsp</td>
+  </tr>
+        <tr>
+    <td>Level 10 – 14</td>
+    <td>&nbsp4 SLP per win&nbsp</td>
+  </tr>
+        <tr>
+    <td>Level 15 – 16</td>
+    <td>&nbsp6 SLP per win&nbsp</td>
+  </tr>
+        <tr>
+    <td>Level 17 – 20</td>
+    <td>&nbsp5-10 SLP per win&nbsp</td>
+  </tr>
+        <tr>
+    <td>Level 21 – 36</td>
+    <td>&nbsp10-20 SLP per win&nbsp</td>
+  </tr>
+</table>
+      <p>As you can see, higher levels on Adventure Mode give more SLP rewards. This is why you need to focus first on leveling up your Axies in the beginning.
+      </p>
+      <p>Once they reach higher levels where you get 10-20 SLP per win, it will be much easier to achieve 50 SLP in Adventure Mode in less than 1 hour.
+      </p>
+      <p>Think of it as an investment where you are making your team more powerful first so that later, they can easily farm SLPs faster and more efficiently!
+      </p>
+      <p>Lastly, another incentive to focus on leveling up your Axies first is the Boss Level rewards. On Ruin 21, for example, you get a bonus of 200 SLP after clearing the level.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Variable_scope">
+    <header>EXP gained per Adventure Level/Ruin</header>
+    <article>
+      <p>
+        Here is the EXP table to determine how much EXP is gained for each Adventure Mode ruin.
+      </p>
+
+      <table>
+  <tr>
+    <th>&nbspLevel/Ruin&nbsp</th>
+    <th>&nbspEXP Gained&nbsp</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>51 EXP</td>
+  </tr>
+         <tr>
+    <td>2</td>
+    <td>59 EXP</td>
+  </tr>
+        <tr>
+    <td>3</td>
+    <td>111 EXP</td>
+  </tr>
+        <tr>
+    <td>4</td>
+    <td>118 EXP</td>
+  </tr>
+        <tr>
+    <td>5</td>
+    <td>141 EXP</td>
+  </tr>
+        <tr>
+    <td>6</td>
+    <td>199 EXP</td>
+  </tr>
+        <tr>
+    <td>7</td>
+    <td>256 EXP</td>
+  </tr>
+        <tr>
+    <td>8</td>
+    <td>237 EXP</td>
+  </tr>
+        <tr>
+    <td>9</td>
+    <td>282 EXP</td>
+  </tr>
+        <tr>
+    <td>10</td>
+    <td>300 EXP</td>
+  </tr>
+        <tr>
+    <td>11</td>
+    <td>344 EXP</td>
+  </tr>
+        <tr>
+    <td>12</td>
+    <td>429 EXP</td>
+  </tr>
+        <tr>
+    <td>13</td>
+    <td>378 EXP</td>
+  </tr>
+        <tr>
+    <td>14</td>
+    <td>347 EXP</td>
+  </tr>
+        <tr>
+    <td>15</td>
+    <td>358 EXP</td>
+  </tr>
+        <tr>
+    <td>16</td>
+    <td>402 EXP</td>
+  </tr>
+        <tr>
+    <td>17</td>
+    <td>367 EXP</td>
+  </tr>
+        <tr>
+    <td>18</td>
+    <td>446 EXP</td>
+  </tr>
+        <tr>
+    <td>19</td>
+    <td>434 EXP</td>
+  </tr>
+        <tr>
+    <td>20</td>
+    <td>401 EXP</td>
+  </tr>
+        <tr>
+    <td>21</td>
+    <td>644 EXP</td>
+  </tr>
+        <tr>
+    <td>22</td>
+    <td>449 EXP</td>
+  </tr>
+        <tr>
+    <td>23</td>
+    <td>618 EXP</td>
+  </tr>
+        <tr>
+    <td>24</td>
+    <td>582 EXP</td>
+  </tr>
+        <tr>
+    <td>25</td>
+    <td>618 EXP</td>
+  </tr>
+        <tr>
+    <td>26</td>
+    <td>797 EXP</td>
+  </tr>
+        <tr>
+    <td>27</td>
+    <td>735 EXP</td>
+  </tr>
+        <tr>
+    <td>28</td>
+    <td>759 EXP</td>
+  </tr>
+        <tr>
+    <td>29</td>
+    <td>800 EXP</td>
+  </tr>
+        <tr>
+    <td>30</td>
+    <td>1209 EXP</td>
+  </tr>
+        <tr>
+    <td>31</td>
+    <td>810 EXP</td>
+  </tr>
+        <tr>
+    <td>32</td>
+    <td>724 EXP</td>
+  </tr>
+        <tr>
+    <td>33</td>
+    <td>891 EXP</td>
+  </tr>
+        <tr>
+    <td>34</td>
+    <td>800 EXP</td>
+  </tr>
+        <tr>
+    <td>35</td>
+    <td>805 EXP</td>
+  </tr>
+        <tr>
+    <td>36</td>
+    <td>820 EXP</td>
+  </tr>
+</table>
+    </article>
+  </section>
+  <section class="main-section" id="Global_variables">
+    <header>Overview of Axie Infinity Gameplay</header>
+    <article>
+      <p>
+        In Axie Infinity, players raise and battle virtual pets called Axies. It is very similar to strategy games like Pokemon, as well as turn-based card games such as Hearthstone.
+      </p>
+
+      <p>
+        Axie Infinity is a game that runs on the blockchain, and each Axie is a non-fungible token or NFT. If you are not familiar with these terminologies, we recommend you to do a little research on blockchains and NFTs first!
+      </p>
+      <p>To start playing Axie Infinity, you first need to buy 3 Axies. You can then choose to battle against enemy monsters in Adventure Mode to level up your Axies, or battle with other player’s teams in the Arena and compete in the leaderboards.
+      </p>
+      <p>Either way, both game modes will give you Smooth Love Potions or “SLPs” as rewards. This is the main resource that players will want to farm and later sell for real-life money.
+      </p>
+      <p>We will talk more about how to earn below, for now let’s take a look at what an “Axie” is!
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Constants">
+    <header>What are Axie base classes?</header>
+    <article>
+      <p>
+        Axies are your virtual pets in the game. Axies have different attributes, one of which is the Axie’s base class. There are 9 different Axie classes:
+      </p>
+      <img src="https://lynnyl.io/wp-content/uploads/2021/03/Class-advantage-w-secrets.png" height="300" width="500">
+      <ul>
+        <li>Plant
+        </li>
+        <li>Reptile
+        </li>
+        <li>Dusk
+        </li>
+        <li>Beast
+        </li>
+        <li>Bug
+        </li>
+        <li>Mech
+        </li>
+        <li>Aqua
+        </li>
+        <li>Bird
+        </li>
+        <li>Dawn
+        </li>
+        <p>Each Axie class has different strengths and weaknesses, and usually determines the Axie’s role in the team.
+        </p>
+      <p>To make sure all classes are balanced, there is a rock-paper-scissors system in the game where a certain class can be strong or weak against another class:
+      </p>
+      <img src="https://leveldash.com/wp-content/uploads/Axie-Infinity-class-weakness-and-strengths.png" height="300" width="350">
+    </article>
+  </section>
+  <section class="main-section" id="Data_types">
+    <header>What are Axie Stats?</header>
+    <article>
+      <p>Aside from their base class, Axies also have four stat attributes:</p>
+      <ul>
+            <li>Health — the Axie’s HP, or the amount of damage it can take before getting knocked out.</li>
+            <li>Speed — determines turn order, Axies with higher Speeds attack first.
+            </li>
+            <li>Skill — increases damage dealt when the Axie performs multiple cards/moves (a.k.a. combo).</li>
+            <li>Morale — increases chance to land a critical hit, as well as entering “last stand” which allows them to attack a few more times before getting knocked out.</li>
+      </ul>
+      <p>Axies get a total of 140 stat points which are distributed across the four attributes depending on their base class.
+      </p>
+      <p>For example, Plants usually start with high HP, perfect for a defensive tank role. Meanwhile, Beasts have high Morale and low HP, making them a great attacker from the team backlines.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="if...else_statement">
+    <header>What are Axie Body Parts?</header>
+    <article>
+      <p>
+        Aside from their base class, Axies also have 6 different body parts:
+      </p>
+      <ul>
+        <li>Eyes
+        </li>
+        <li>Ears
+        </li>
+        <li>Horns
+        </li>
+        <li>Mouth
+        </li>
+        <li>Back
+        </li>
+        <li>Tail
+        </li>
+        <p>Here is an example: this Axie has a Mavis eye part, an Ear Breathing ears, a Garish Worm horn, a Goda mouth, a Little Branch mouth, and a Rice tail.
+        </p>
+        <img src="https://leveldash.com/wp-content/uploads/Axie-Infinity-Body-Parts-Stats-600x417.jpg" height="500" width="700">
+        <p>Each body part belongs to a specific Axie class, and depending on the its class, the part gives additional stat bonuses:
+        </p>
+        <ul>
+          <li>Plant - 3 HP + 1 Morale
+          </li>
+          <li>Aqua - 3 Speed + 1 HP
+          </li>
+          <li>Reptile - 3 HP + 1 Speed
+          </li>
+          <li>Beast - 3 Morale + 1 Speed
+          </li>
+          <li>Bug - 3 Morale + 1 HP
+          </li>
+          <li>Bird - 3 Speed + 1 Morale
+          </li>
+        </ul>
+        <p>An Axie can have a different combination of parts from different classes. This is what makes each Axie unique.
+        </p>
+    </article>
+  </section>
+  <section class="main-section" id="while_statement">
+    <header>What are Axie Abilities/Cards?</header>
+    <article>
+      <p>Lastly, Axies have 4 different abilities or moves that they can use during battle. These are represented by Cards.
+      </p>
+      <p>There are a total of 132 abilities/cards in the game. You can check out the full list on tools such as Axie World.
+      </p>
+      <img src="https://leveldash.com/wp-content/uploads/Axie-Infinity-Abilities-Cards-600x392.jpg" height="500" width="700">
+      <p>The Axie’s abilities depend on which horn, mouth, back and tail body parts it has. Again, this is what makes each Axie unique.
+      </p>
+      <p>Abilities can either be offensive, such as dealing damage to opponents. They can also be defensive, such as recovering your Axie’s health points, or stealing energy from the enemy team.
+      </p>
+      <p>A good Axie should have a well-balanced set of abilities that make him perform his role efficiently.
+      </p>
+      <p>For example, Attacker Axies should have cards that deal lots of damage, while Defensive Axies should have cards that allow them to survive longer and defend their team.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Function_declarations">
+    <header>How to Start Playing Axie Infinity</header>
+    <article>
+      <p>To start playing Axie Infinity, you will first need to buy a starter team of three (3) Axies using Ether. Here’s how you can do it:
+      </p>
+      <ol>
+        <li>Buy ETH from a cryptocurrency exchange such as Binance.
+        </li>
+        <li>Create a MetaMask wallet and deposit your ETH into it.
+        </li>
+        <li>Create a Ronin Wallet account and deposit your ETH into it using Ronin Bridge.
+        </li>
+        <li>Go to Axie Marketplace and login using your Ronin Wallet.
+        </li>
+        <li>Buy at least 3 Axies.
+        </li>
+        <li>Download the Axie Infinity game client from their website. (Here’s a guide on how to install the game on your device!)
+        </li>
+      </ol>
+      <p>Tip: You can save up on some Ethereum transaction fees by purchasing WETH (wrapped Ether) directly into your Ronin wallet. Here’s a video guide made by the Axie Infinity team!
+      </p>
+      <p>The cost of each Axie depends on the current price of ETH as well as a lot of different factors.
+      </p>
+      <p>Make sure to do a lot of research first on what traits to look out for when buying Axies.
+      </p>
+      <p>Once you have a starter team ready, you can then download the game client and sync your Axies to the game. It’s now time to start playing and earning!
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://leveldash.com/exp-farming-guide-axie-infinity/"
+            target="_blank"
+            >How to Play Axie Infinity: Ultimate Beginner’s Guide</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
